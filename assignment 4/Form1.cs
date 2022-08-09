@@ -16,6 +16,7 @@ namespace assignment_4
         public Form1()
         {
             InitializeComponent();
+             
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -73,6 +74,16 @@ namespace assignment_4
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void chk_options_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string Items = " ";
+            foreach(var item in chk_options.CheckedItems)
+            {
+                Items += Items.ToString();
+            }
+            MessageBox.Show(Items);
         }
     }
 }

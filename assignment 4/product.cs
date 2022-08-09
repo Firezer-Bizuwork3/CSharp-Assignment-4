@@ -14,10 +14,10 @@ namespace assignment_4
         public String objectname{ get; set; }
         public string count { get; set; }
         public string price { get; set; }
-        
-        
 
-       
+        public string Items { get; set; }
+
+
         public void save(product p)
         {
             
