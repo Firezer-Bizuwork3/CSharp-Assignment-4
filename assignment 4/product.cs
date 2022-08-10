@@ -17,11 +17,16 @@ namespace assignment_4
 
         public string Items { get; set; }
 
-
+        private static List<product> products = new List<product>();
+        public static List<String>checkedBoxes=new List<String>();
         public void save(product p)
         {
             
-           
         }
+        public static List<product> getall()
+        {
+            return product.products;
+        }
+            
     }
 }

@@ -43,6 +43,7 @@ namespace assignment_4
             p.objectname = text_objectname.Text;
             p.count = text_count.Text;
             p.price = text_price.Text;
+           
 
             p.save(p);
             MessageBox.Show($"Item Has been Added! \n Item number: " +
@@ -51,7 +52,8 @@ namespace assignment_4
                 $"Inventory number: {p.inventoryNumber}\n " +
                 $"Item name: {p.objectname}\n " +
                 $"Quantity: {p.count}\n " +
-                $"Price: {p.price} ");
+                $"Price: {p.price} " 
+                );
 
 
         }
@@ -73,7 +75,7 @@ namespace assignment_4
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void chk_options_SelectedIndexChanged(object sender, EventArgs e)
@@ -84,6 +86,44 @@ namespace assignment_4
                 Items += Items.ToString();
             }
             MessageBox.Show(Items);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+            
+                   
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true)
+            {
+                return;
+            }
+            
+        }
+
+        private void text_price_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton4.Checked == true)
+            {
+                return;
+            }
         }
     }
 }
