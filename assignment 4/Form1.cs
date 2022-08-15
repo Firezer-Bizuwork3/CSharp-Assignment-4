@@ -43,7 +43,8 @@ namespace assignment_4
             p.objectname = text_objectname.Text;
             p.count = text_count.Text;
             p.price = text_price.Text;
-           
+            getPaymentMethod(radioButton3);
+            getPaymentMethod(radioButton4);
 
             p.save(p);
             MessageBox.Show($"Item Has been Added! \n Item number: " +
@@ -57,7 +58,13 @@ namespace assignment_4
 
 
         }
-
+        private void getPaymentMethod(RadioButton rdoButton)
+        {
+            if (rdoButton.Checked)
+            {
+                MessageBox.Show(rdoButton.Text);
+            }
+        }
         private void butn_canel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -101,11 +108,7 @@ namespace assignment_4
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton3.Checked == true)
-            {
-                return;
-            }
-            
+          
         }
 
         private void text_price_TextChanged(object sender, EventArgs e)
@@ -120,10 +123,7 @@ namespace assignment_4
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            if(radioButton4.Checked == true)
-            {
-                return;
-            }
+          
         }
     }
 }

@@ -52,9 +52,17 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,7 +123,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(139, 157);
+            this.label4.Location = new System.Drawing.Point(92, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 18);
             this.label4.TabIndex = 6;
@@ -125,7 +133,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(92, 259);
+            this.label5.Location = new System.Drawing.Point(73, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 18);
             this.label5.TabIndex = 7;
@@ -136,7 +144,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(358, 259);
+            this.label6.Location = new System.Drawing.Point(282, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 18);
             this.label6.TabIndex = 8;
@@ -144,7 +152,7 @@
             // 
             // text_objectname
             // 
-            this.text_objectname.Location = new System.Drawing.Point(95, 200);
+            this.text_objectname.Location = new System.Drawing.Point(76, 170);
             this.text_objectname.Name = "text_objectname";
             this.text_objectname.Size = new System.Drawing.Size(312, 22);
             this.text_objectname.TabIndex = 9;
@@ -152,7 +160,7 @@
             // 
             // text_count
             // 
-            this.text_count.Location = new System.Drawing.Point(95, 292);
+            this.text_count.Location = new System.Drawing.Point(73, 237);
             this.text_count.Name = "text_count";
             this.text_count.Size = new System.Drawing.Size(137, 22);
             this.text_count.TabIndex = 10;
@@ -160,7 +168,7 @@
             // text_price
             // 
             this.text_price.BackColor = System.Drawing.Color.White;
-            this.text_price.Location = new System.Drawing.Point(327, 292);
+            this.text_price.Location = new System.Drawing.Point(264, 237);
             this.text_price.Name = "text_price";
             this.text_price.Size = new System.Drawing.Size(161, 22);
             this.text_price.TabIndex = 11;
@@ -171,7 +179,7 @@
             this.butn_add.BackColor = System.Drawing.Color.White;
             this.butn_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butn_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butn_add.Location = new System.Drawing.Point(104, 376);
+            this.butn_add.Location = new System.Drawing.Point(76, 282);
             this.butn_add.Name = "butn_add";
             this.butn_add.Size = new System.Drawing.Size(91, 37);
             this.butn_add.TabIndex = 12;
@@ -183,7 +191,7 @@
             // 
             this.butn_canel.BackColor = System.Drawing.Color.White;
             this.butn_canel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butn_canel.Location = new System.Drawing.Point(251, 376);
+            this.butn_canel.Location = new System.Drawing.Point(198, 282);
             this.butn_canel.Name = "butn_canel";
             this.butn_canel.Size = new System.Drawing.Size(78, 37);
             this.butn_canel.TabIndex = 13;
@@ -195,7 +203,7 @@
             // 
             this.butn_reset.BackColor = System.Drawing.Color.White;
             this.butn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butn_reset.Location = new System.Drawing.Point(393, 376);
+            this.butn_reset.Location = new System.Drawing.Point(330, 282);
             this.butn_reset.Name = "butn_reset";
             this.butn_reset.Size = new System.Drawing.Size(95, 37);
             this.butn_reset.TabIndex = 14;
@@ -213,7 +221,7 @@
             this.chk_options.Items.AddRange(new object[] {
             "Product_availability",
             "out of service"});
-            this.chk_options.Location = new System.Drawing.Point(590, 137);
+            this.chk_options.Location = new System.Drawing.Point(444, 156);
             this.chk_options.Name = "chk_options";
             this.chk_options.Size = new System.Drawing.Size(146, 38);
             this.chk_options.TabIndex = 16;
@@ -224,9 +232,9 @@
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(590, 200);
+            this.groupBox1.Location = new System.Drawing.Point(609, 137);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(229, 97);
+            this.groupBox1.Size = new System.Drawing.Size(229, 82);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Delivery";
@@ -235,7 +243,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(31, 72);
+            this.radioButton2.Location = new System.Drawing.Point(37, 56);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(115, 20);
             this.radioButton2.TabIndex = 1;
@@ -259,9 +267,9 @@
             // 
             this.groupBox2.Controls.Add(this.radioButton4);
             this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Location = new System.Drawing.Point(590, 330);
+            this.groupBox2.Location = new System.Drawing.Point(609, 225);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(229, 113);
+            this.groupBox2.Size = new System.Drawing.Size(229, 94);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Payment_Method";
@@ -291,12 +299,72 @@
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.dataGridView1.Location = new System.Drawing.Point(73, 330);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(786, 150);
+            this.dataGridView1.TabIndex = 20;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Number";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Object Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Date";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Court";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Price";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Inventory Number";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(897, 501);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chk_options);
@@ -325,6 +393,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,6 +424,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }
 
