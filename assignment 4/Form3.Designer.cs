@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_black = new System.Windows.Forms.Label();
             this.lbl_green = new System.Windows.Forms.Label();
             this.lbl_blue = new System.Windows.Forms.Label();
             this.lbl_red = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(280, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(12, 241);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(48, 48);
+            this.panel6.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(12, 180);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(48, 44);
+            this.panel5.TabIndex = 6;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(12, 122);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(48, 44);
+            this.panel4.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(12, 58);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(48, 46);
+            this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // lbl_black
             // 
@@ -110,34 +139,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(520, 450);
             this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(12, 58);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(48, 46);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(12, 122);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(48, 44);
-            this.panel4.TabIndex = 5;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(12, 180);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(48, 44);
-            this.panel5.TabIndex = 6;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(12, 241);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(48, 48);
-            this.panel6.TabIndex = 7;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Form3
             // 
