@@ -32,5 +32,10 @@ namespace assignment_4
                 MessageBox.Show("inccorect");
             }
         }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

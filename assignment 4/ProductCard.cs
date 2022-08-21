@@ -16,13 +16,31 @@ namespace assignment_4
         {
             InitializeComponent();
         }
-        private string PName;
+        private string _title;
 
-        public string pName
+        public string  Title
         {
-            get { return pName; }
-            set { pName = value;lbl_price.Text = value; }
+            get { return _title; }
+            set { _title= value;lbl_title.Text = Title; }
         }
+        private string _price;
+
+        public string Price
+        {
+            get { return _price; }
+            set { _price = value; lbl_price.Text =Price; }
+        }
+        private string _description;
+
+        public string Description
+        {
+            get { return _description; }
+            set { _description = value;lbl_description.Text = Description; }
+        }
+
+      
+
+
 
         private void ProductCard_Load(object sender, EventArgs e)
         {
