@@ -83,7 +83,7 @@
             this.Controls.Add(this.lbl_description);
             this.Controls.Add(this.lbl_title);
             this.Name = "ProductCard";
-            this.Size = new System.Drawing.Size(392, 335);
+            this.Size = new System.Drawing.Size(537, 335);
             this.Load += new System.EventHandler(this.ProductCard_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

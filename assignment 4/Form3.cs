@@ -50,5 +50,20 @@ namespace assignment_4
         {
 
         }
+
+        private void productCard1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productCard2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productCard1_Load_1(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

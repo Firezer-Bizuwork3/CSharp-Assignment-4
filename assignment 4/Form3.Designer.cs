@@ -38,7 +38,10 @@
             this.lbl_blue = new System.Windows.Forms.Label();
             this.lbl_red = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.productCard2 = new assignment_4.ProductCard();
+            this.productCard1 = new assignment_4.ProductCard();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 450);
+            this.panel1.Size = new System.Drawing.Size(280, 559);
             this.panel1.TabIndex = 0;
             // 
             // panel6
@@ -133,25 +136,49 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.productCard2);
+            this.panel2.Controls.Add(this.productCard1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.panel2.Location = new System.Drawing.Point(280, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(520, 450);
+            this.panel2.Size = new System.Drawing.Size(547, 559);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // productCard2
+            // 
+            this.productCard2.Description = null;
+            this.productCard2.Location = new System.Drawing.Point(68, 302);
+            this.productCard2.Name = "productCard2";
+            this.productCard2.Price = null;
+            this.productCard2.Size = new System.Drawing.Size(392, 202);
+            this.productCard2.TabIndex = 1;
+            this.productCard2.Title = null;
+            // 
+            // productCard1
+            // 
+            this.productCard1.Description = null;
+            this.productCard1.Location = new System.Drawing.Point(59, 12);
+            this.productCard1.Name = "productCard1";
+            this.productCard1.Price = null;
+            this.productCard1.Size = new System.Drawing.Size(392, 181);
+            this.productCard1.TabIndex = 0;
+            this.productCard1.Title = null;
+            this.productCard1.Load += new System.EventHandler(this.productCard1_Load_1);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(827, 559);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form3";
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -168,5 +195,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private ProductCard productCard2;
+        private ProductCard productCard1;
     }
 }
