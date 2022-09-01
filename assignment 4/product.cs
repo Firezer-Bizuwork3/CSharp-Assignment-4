@@ -18,16 +18,26 @@ namespace assignment_4
         public string Items { get; set; }
 
         private static List<product> products = new List<product>();
-        public static List<String>checkedBoxes=new List<String>();
-        public void save(product p)
+       
+        public void save()
         {
-            
+            //product.Add(this);
+            //MessageBox.show($"{objectname} added successfully");
+          
         }
-        public static List<product> getall()
+        public static List<product> getallproducts()
         {
             return product.products;
         }
-        
-            
+        public static List<product> SearchByName(string s)
+        {
+            return getallproducts().FindAll(product =>product.objectname == s);
+        }
+        public static product SearchByInventoryNumber (string InventoryNumber)
+        {
+            return getallproducts().Find(x => x.inventoryNumber == InventoryNumber);
+        }
+
+
     }
 }

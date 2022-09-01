@@ -12,9 +12,17 @@ namespace assignment_4
 {
     public partial class ProductCard : UserControl
     {
-        public ProductCard()
+        public ProductCard(string Name,float price,string description,bool availability)
         {
             InitializeComponent();
+            this.Name = Name;
+            this.Price=price.ToString();
+            this.Description = description;
+            this.Title = Name;
+            if (!availability)
+            {
+                this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            }
         }
         private string _title;
 

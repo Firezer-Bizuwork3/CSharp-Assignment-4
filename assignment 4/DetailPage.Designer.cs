@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_number = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_InventoryNumber = new System.Windows.Forms.Label();
             this.lbl_ObjectName = new System.Windows.Forms.Label();
             this.lbl_count = new System.Windows.Forms.Label();
             this.lbl_price = new System.Windows.Forms.Label();
+            this.lbl_number = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,16 +61,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(544, 339);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // lbl_number
-            // 
-            this.lbl_number.AutoSize = true;
-            this.lbl_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_number.Location = new System.Drawing.Point(3, 0);
-            this.lbl_number.Name = "lbl_number";
-            this.lbl_number.Size = new System.Drawing.Size(106, 29);
-            this.lbl_number.TabIndex = 0;
-            this.lbl_number.Text = "Number";
             // 
             // lbl_date
             // 
@@ -122,6 +112,16 @@
             this.lbl_price.TabIndex = 5;
             this.lbl_price.Text = "Price";
             // 
+            // lbl_number
+            // 
+            this.lbl_number.AutoSize = true;
+            this.lbl_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_number.Location = new System.Drawing.Point(3, 0);
+            this.lbl_number.Name = "lbl_number";
+            this.lbl_number.Size = new System.Drawing.Size(106, 29);
+            this.lbl_number.TabIndex = 0;
+            this.lbl_number.Text = "Number";
+            // 
             // DetailPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -130,6 +130,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DetailPage";
             this.Text = "DetailPage";
+            this.Load += new System.EventHandler(this.DetailPage_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
